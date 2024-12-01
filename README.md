@@ -1,15 +1,15 @@
-[![Current version](https://img.shields.io/packagist/v/maatify/logger)](https://packagist.org/packages/maatify/logger)
-[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/logger)](https://packagist.org/packages/maatify/logger)
-[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/logger)](https://packagist.org/packages/maatify/logger/stats)
-[![Total Downloads](https://img.shields.io/packagist/dt/maatify/logger)](https://packagist.org/packages/maatify/logger/stats)
+[![Current version](https://img.shields.io/packagist/v/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs)
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs/stats)
+[![Total Downloads](https://img.shields.io/packagist/dt/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs/stats)
 
-# Logger
+# PayTabs
 
 maatify.dev logger, known by our team
 # Installation
 
 ```shell
-composer require maatify/paystack
+composer require maatify/pay-tabs
 ```
 
 # Usage
@@ -27,4 +27,3 @@ composer require maatify/paystack
     Logger::RecordLog(string|array $log, string $file_name, string log_file_extinsion);
 ```
 
-make sure there is logs folder under project main folder

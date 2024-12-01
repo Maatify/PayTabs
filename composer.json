@@ -1,7 +1,7 @@
 {
   "name": "maatify/pay-tabs",
   "description": "maatify.dev PayTabs, known by our team",
-  "version": "1.1.001",
+  "version": "1.1.0002",
   "type": "library",
   "keywords": [
     "PHP",

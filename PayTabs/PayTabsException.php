@@ -20,28 +20,42 @@ namespace Maatify\PayTabs;
 
 class PayTabsException extends \Exception
 {
-    public static function InvalidPost():static
+    protected int $errorCode;
+
+    public function __construct(string $message, int $errorCode, \Throwable $previous = null)
     {
-        return new static('Invalid post data');
+        $this->errorCode = $errorCode;
+        parent::__construct($message, $errorCode, $previous);
     }
 
-    public static function MissingPost():static
+    public function getErrorCode(): int
     {
-        return new static('Missing post data');
+        return $this->errorCode;
     }
 
-    public static function CreatePaymentLinkTryAgain():static
+    // Static methods with error codes
+    public static function InvalidPost(): static
     {
-        return new static('Try Again Due Create Payment Link');
+        return new static('Invalid post data', 1001);
     }
 
-    public static function CreatePaymentLinkConnectionError():static
+    public static function MissingPost(): static
     {
-        return new static('Try Again Due Create Payment Link Fatal Connection');
+        return new static('Missing post data', 1002);
     }
 
-    public static function InvalideSignature(): static
+    public static function CreatePaymentLinkTryAgain(): static
     {
-        return new static('Invalid signature');
+        return new static('Try Again Due Create Payment Link', 1003);
+    }
+
+    public static function CreatePaymentLinkConnectionError(): static
+    {
+        return new static('Try Again Due Create Payment Link Fatal Connection', 1004);
+    }
+
+    public static function InvalidSignature(): static
+    {
+        return new static('Invalid signature', 1005);
     }
 }
