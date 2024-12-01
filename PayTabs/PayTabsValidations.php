@@ -52,7 +52,7 @@ class PayTabsValidations extends PayTabs
 
             return $signature_fields;
         }else{
-            throw PayTabsException::InvalideSignature();
+            throw PayTabsException::InvalidSignature();
         }
     }
 
@@ -78,7 +78,7 @@ class PayTabsValidations extends PayTabs
 
         }else{
 
-            throw PayTabsException::InvalideSignature();
+            throw PayTabsException::InvalidSignature();
 
         }
     }
