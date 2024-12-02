@@ -1,7 +1,7 @@
-[![Current version](https://img.shields.io/packagist/v/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs)
-[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs)
-[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs/stats)
-[![Total Downloads](https://img.shields.io/packagist/dt/maatify/PayTabs)](https://packagist.org/packages/maatify/PayTabs/stats)
+[![Current version](https://img.shields.io/packagist/v/maatify/pay-tabs)](https://packagist.org/packages/maatify/pay-tabs)
+[![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maatify/pay-tabs)](https://packagist.org/packages/maatify/pay-tabs)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/maatify/pay-tabs)](https://packagist.org/packages/maatify/pay-tabs/stats)
+[![Total Downloads](https://img.shields.io/packagist/dt/maatify/pay-tabs)](https://packagist.org/packages/maatify/pay-tabs/stats)
 
 # PayTabs
 
