@@ -46,6 +46,8 @@ try {
     }
 catch (PayTabsException $exception){
 
+    Logger::RecordLog($exception, 'paytabs_getRedirectUrl_exception');
+
         // Handle specific error codes programmatically
         
         switch ($exception->getErrorCode()) {
@@ -129,13 +131,11 @@ try {
     
 }catch (PayTabsException $exception){
 
-    Logger::RecordLog($exception);
+    Logger::RecordLog($exception, 'paytabs_callback_exception');
     
     // Handle specific error codes programmatically
     
     switch ($exception->getErrorCode()) {
-    
-        Logger::RecordLog($exception, 'paytabs_callback_exception');
         
         case 1002:
         
