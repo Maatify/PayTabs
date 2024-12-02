@@ -19,7 +19,7 @@
 
 namespace Maatify\PayTabs;
 
-class PayTabsRedirectUrl extends PayTabs
+abstract class PayTabsRedirectUrl extends PayTabs
 {
     /**
      * @throws PayTabsException

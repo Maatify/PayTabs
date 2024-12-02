@@ -19,7 +19,7 @@
 
 namespace Maatify\PayTabs;
 
-class PayTabsValidations extends PayTabs
+abstract class PayTabsValidations extends PayTabs
 {
     /**
      * @throws PayTabsException
